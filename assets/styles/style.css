@@ -1,0 +1,272 @@
+/*
+The box-sizing property allows us to include the padding and border in an element's total width and height. If you set box-sizing: border-box; on an element padding and border are included in the width and height: Both divs are the same size now! Hooray!
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #ececec;
+}
+
+.wrapper {
+  width:1024px;
+}
+
+header {
+  margin-bottom: 20px;
+  height: 90px;
+  background-color: #fff;
+  border-bottom: 2px solid #dedede;
+}
+
+.logo {
+  float: left;
+  background-color: #4aaaa5;
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  width: 400px;
+  height: 88px;
+  padding: 22px 10px 0 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+nav {
+  float: right;
+  font-size: 18px;
+  padding: 34px 10px 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #666;
+  padding: 2px 20px;
+  border-right: 1px solid #666;
+}
+
+nav a:last-child {
+  border-right: none;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  clear: both;
+}
+
+.main-container {
+  padding: 18px;
+  background-color: #fff;
+  min-height: calc(100vh - 210px);
+  border: 1px solid #dedede;
+  /* overflow: auto; */
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 80px;
+}
+
+.main-container h1 {
+  font-size: 22px;
+  color: #4aaaa5;
+  padding: 0;
+  border-bottom: 2px solid #dedede;
+}
+
+.main-container img {
+  width: 250px;
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.main-container p {
+  color: #777;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+main {
+  margin-bottom: 20px;
+  min-height: calc(100vh - 90px);;
+}
+
+footer {
+  position: fixed;
+  border-top: 8px solid #4aaaa5;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  padding: 20px 0;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS for contact page */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container1{
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* css for portfolio page */
+.image-wrapper {
+  overflow: auto;
+  width: 600px;
+  margin-bottom: 40px;
+}
+
+.pic1 {
+  float: left;
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.pic1 img {
+  margin: 0;
+}
+
+.pic1 h4 {
+  position: absolute;
+  background-color:  #4aaaa5;
+  color: white;
+  padding: 13px 5px;
+  height: 50px;
+  bottom: 1px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/* CSS for media Query */
+@media screen and (max-width: 890px) {
+  /* body {
+    background-color:gray;
+  } */
+
+.wrapper {
+ 
+  width: 100%;
+}
+
+nav {
+width: 100%;
+}
+
+.logo {
+  width:100%
+}
+
+img {
+  width: 100%;
+}
+.container {
+  width: 100%;
+}
+
+.main-container{
+  width :100%;
+}
+
+.image-wrapper{
+  width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  /* body {
+    background-color:gray;
+  } */
+
+/* .wrapper {
+ 
+  width: 100%;
+}
+
+nav {
+width: 100%;
+}
+
+.logo {
+  width:100%
+}
+
+img {
+  width: 100%;
+}
+.container {
+  width: 100%;
+}
+
+.main-container{
+  width :100%;
+}
+
+.image-wrapper{
+  width: 100%;
+  } */
+}
+
+@media screen and (max-width: 168px) {
+  /* body {
+    background-color:gray;
+  } */
+/* 
+.wrapper {
+ 
+  width: 100%;
+}
+
+nav {
+width: 100%;
+}
+
+.logo {
+  width:100%
+}
+
+img {
+  width: 100%;
+}
+.container {
+  width: 100%;
+}
+
+.main-container{
+  width :100%;
+}
+
+.image-wrapper{
+  width: 100%;
+  } */
+}
